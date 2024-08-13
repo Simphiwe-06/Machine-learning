@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
+def main():
 heights = np.array([150, 160, 170, 180, 190])  # in cm
 weights = np.array([65, 70, 75, 80, 85])       # in km
 
@@ -22,3 +23,6 @@ plt.legend()
 plt.show()
 
 print(f"The generated prediction for heights {heights_new.flatten()}: {weights_pred}")
+
+if __name__ == "__main__":
+    main()
